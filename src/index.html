@@ -839,12 +839,6 @@
     </main>
     <script type="module" src="index.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW-p4nZpSUbbOWr0MdEUruheMS1uooSQw&libraries=places&callback=initAutocomplete"
-        async defer type="module"></script>
-    <script async src="./modal.js" type="module"></script>
-    <!-- <script src="./small-form.js" type="module"></script> -->
-    <script src="./animation.js" type="module"></script>
     <script>
         let autocomplete;
         function initAutocomplete() {
@@ -859,7 +853,15 @@
                     // fields: ['place_id', 'geometry', 'name'],
                 });
             // autocomplete.addListener('place_changed', onPlaceChange);
-        }</script>
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW-p4nZpSUbbOWr0MdEUruheMS1uooSQw&libraries=places&callback=initAutocomplete"
+        async defer type="module"></script>
+    <script async src="./modal.js" type="module"></script>
+    <!-- <script src="./small-form.js" type="module"></script> -->
+    <script src="./animation.js" type="module"></script>
+
 
 
 
