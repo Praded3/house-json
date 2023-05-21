@@ -1,0 +1,23 @@
+.response__section {
+  padding-top: 0; }
+  @media screen and (max-width: 767px) {
+    .response__section {
+      padding-bottom: 10px; } }
+
+.response__container {
+  padding: 0; }
+
+.response__wrapper {
+  position: relative; }
+
+.response__bcg-img {
+  object-fit: cover;
+  width: 100%;
+  display: flex; }
+
+.response__img {
+  position: absolute;
+  top: 10%;
+  left: 10%; }
+
+/*# sourceMappingURL=response.css.map */

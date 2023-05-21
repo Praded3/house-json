@@ -1,0 +1,128 @@
+.slider__title._anim-items {
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0; }
+  .slider__title._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.1s; }
+
+.item__timer._anim-items {
+  transform: translate(150%, 0px);
+  opacity: 0; }
+  .item__timer._anim-items.item__timer._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s; }
+
+.item__hous._anim-items {
+  transform: translate(150%, 0px);
+  opacity: 0; }
+  .item__hous._anim-items.item__hous._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.5s; }
+
+.item__payments._anim-items {
+  transform: translate(150%, 0px);
+  opacity: 0; }
+  .item__payments._anim-items.item__payments._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.8s; }
+
+.hero__btn._anim-items,
+.advantages__btn._anim-items,
+.question__btn._anim-items,
+.steps__btn._anim-items {
+  transform: translate(0px, -120%);
+  opacity: 0; }
+  .hero__btn._anim-items.hero__btn._anim-items._active, .hero__btn._anim-items.advantages__btn._anim-items._active, .hero__btn._anim-items.question__btn._anim-items._active, .hero__btn._anim-items.steps__btn._anim-items._active,
+  .advantages__btn._anim-items.hero__btn._anim-items._active,
+  .advantages__btn._anim-items.advantages__btn._anim-items._active,
+  .advantages__btn._anim-items.question__btn._anim-items._active,
+  .advantages__btn._anim-items.steps__btn._anim-items._active,
+  .question__btn._anim-items.hero__btn._anim-items._active,
+  .question__btn._anim-items.advantages__btn._anim-items._active,
+  .question__btn._anim-items.question__btn._anim-items._active,
+  .question__btn._anim-items.steps__btn._anim-items._active,
+  .steps__btn._anim-items.hero__btn._anim-items._active,
+  .steps__btn._anim-items.advantages__btn._anim-items._active,
+  .steps__btn._anim-items.question__btn._anim-items._active,
+  .steps__btn._anim-items.steps__btn._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.1s; }
+
+._benefits._anim-items,
+.nationwide__right-side._anim-items {
+  transform: translate(120%, 0px);
+  opacity: 0; }
+  @media screen and (max-width: 767px) {
+    ._benefits._anim-items,
+    .nationwide__right-side._anim-items {
+      transform: translate(120%, 0px); } }
+  ._benefits._anim-items._active,
+  .nationwide__right-side._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s ease 0.1s; }
+    @media screen and (max-width: 767px) {
+      ._benefits._anim-items._active,
+      .nationwide__right-side._anim-items._active {
+        transition: all 1s ease 0.2s; } }
+
+._selling._anim-items {
+  transform: translate(220%, 0px);
+  opacity: 0; }
+  @media screen and (max-width: 767px) {
+    ._selling._anim-items {
+      transform: translate(120%, 0px); } }
+  ._selling._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1.3s ease 0.3s; }
+    @media screen and (max-width: 767px) {
+      ._selling._anim-items._active {
+        transition: all 1s ease 0.2s; } }
+
+._our-company._anim-items {
+  transform: translate(320%, 0px);
+  opacity: 0; }
+  @media screen and (max-width: 767px) {
+    ._our-company._anim-items {
+      transform: translate(120%, 0px); } }
+  ._our-company._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1.6s ease 0.5s; }
+    @media screen and (max-width: 767px) {
+      ._our-company._anim-items._active {
+        transition: all 1s ease 0.2s; } }
+
+.question__top-container._anim-items,
+.question__bottom-left-container._anim-items {
+  transform: translate(-120%, 0px);
+  opacity: 0; }
+  .question__top-container._anim-items._active,
+  .question__bottom-left-container._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s ease 0.1s; }
+    @media screen and (max-width: 767px) {
+      .question__top-container._anim-items._active,
+      .question__bottom-left-container._anim-items._active {
+        transition: all 1s ease 0.2s; } }
+
+.question__bottom-right-container._anim-items {
+  transform: translate(120%, 0px);
+  opacity: 0; }
+  .question__bottom-right-container._anim-items._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s ease 0.1s; }
+    @media screen and (max-width: 767px) {
+      .question__bottom-right-container._anim-items._active {
+        transition: all 1s ease 0.2s; } }
+
+/*# sourceMappingURL=anim-items.css.map */
