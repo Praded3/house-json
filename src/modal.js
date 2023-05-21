@@ -120,7 +120,7 @@ console.log(maxDateCorrect);
         const CHAT_ID = '-1001887598395';
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
- bigForm = document.querySelector('.modal__form'),
+let bigForm = document.querySelector('.modal__form');
 
     bigForm.addEventListener('submit', modalFormSubmit);
 
