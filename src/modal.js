@@ -839,22 +839,9 @@ const firstStep = {
     correctZip: document.querySelectorAll('.correct-zip'),
 };
  const address = {};
-        let autocomplete;
-        function initAutocomplete() {
-            autocomplete = new google.maps.places.Autocomplete(
-                document.getElementById('pac-input'),
 
-                {
-                    types: ['address'],
-                    componentRestrictions: { country: ["us"] },
-                    // fields: ["address_components"],
-                    // fields: ["address"],
-                    // fields: ['place_id', 'geometry', 'name'],
-                });
-
-
-            autocomplete.addListener('place_changed', onPlaceChange);
-        }
+            
+        
 
 let place;
 
