@@ -1,6 +1,6 @@
 const refs = {
     backdrop: document.querySelector('.backdrop'),
-    modalForm: document.querySelector('.modal__form'),
+    // modalForm: document.querySelector('.modal__form'),
     modalFormBtn: document.querySelector('.modal__btn'),
     modalCloseBtn: document.querySelector('.modal__close-btn'),
     body: document.querySelector('body'),
@@ -120,7 +120,7 @@ console.log(maxDateCorrect);
         const CHAT_ID = '-1001887598395';
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-bigForm = document.querySelector('.modal__form'),
+ bigForm = document.querySelector('.modal__form'),
 
     bigForm.addEventListener('submit', modalFormSubmit);
 
