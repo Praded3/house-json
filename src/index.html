@@ -792,19 +792,26 @@
 
 
                         <ul class='step__list '>
-                            <li class='_list step__item'><input autocomplete="on" minlength="3"
-                                    class="modal__input-adress last-step-input _req-big" name="modal-name"
+                            <li class='_list step__item'><input autocomplete="on" minlength="2"
+                                    class="modal__input-adress last-step-input _req-big-name _req-big" name="modal-name"
                                     placeholder="Full Name" type="text">
+                                <p class='mistake-name-message'>The Full Name may contain letters (A-z) and a symboll
+                                    "-"</p>
                             </li>
                             <li class='_list step__item'>
                                 <input autocomplete="on" minlength="3"
                                     class="modal__input-adress last-step-input _req-big _req-big-tel" name="modal-phone"
                                     placeholder="Phone Number" type="tel">
+                                <p class='mistake-tel-message'>The phone number must be at least 9 digits long (0-9)</p>
 
                             </li>
                             <li class='_list step__item'><input autocomplete="on" minlength="3"
                                     class="modal__input-adress last-step-input _req-big _req-big-mail" name="modal-mail"
                                     placeholder="E-Mail Address" type="email">
+                                <p class='mistake-mail-message'>The e-mail may contain letters (A-z) and must include
+                                    the symbols "@"
+                                    and "."</p>
+
                                 <!-- pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" -->
                             </li>
                         </ul>

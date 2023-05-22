@@ -223,8 +223,9 @@ async function modalFormSubmit(event) {
     
     
    
+  
     
-    
+
 
     // console.dir(event.currentTarget.elements.repairs.checked);
     
@@ -242,20 +243,37 @@ async function modalFormSubmit(event) {
                 if (emailTest(input)) {
                     formAddError(input);
                     error++;
+                    mistake.mail.classList.add('mistake');
+                } else  {
+                    mistake.mail.classList.remove('mistake');
                 }
             }
             if (input.classList.contains('_req-big-tel')) {
                 if (telTest(input)) {
                     formAddError(input);
                     error++;
+                    mistake.tel.classList.add('mistake');
+                    
+                } else  {
+                    mistake.tel.classList.remove('mistake');
                 }
             } 
-            else {
-				if (input.value === '') {
-					formAddError(input);
-					error++;
-				}
-			}
+             if (input.classList.contains('_req-big-name')) {
+                if (nameTest(input)) {
+                    formAddError(input);
+                    error++;
+                    mistake.name.classList.add('mistake');
+                    
+                } else  {
+                    mistake.name.classList.remove('mistake');
+                }
+            } 
+            // else {
+			// 	if (input.value === '') {
+			// 		formAddError(input);
+			// 		error++;
+			// 	}
+			// }
         }
         return error;
     }
@@ -263,12 +281,16 @@ async function modalFormSubmit(event) {
     function formAddError(input) {
         input.classList.add('_error');
         input.classList.add('_error');
+       
     }
     function formRemoveError(input) {
         input.classList.remove('_error');
         input.classList.remove('_error');
+        // mistake.tel.classList.remove('mistake');
     }
-
+    function nameTest(input) {
+        return !/^([A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+)$/.test(input.value);
+    }
 
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
@@ -282,8 +304,14 @@ async function modalFormSubmit(event) {
 
 
 }
-//====================/ formData /============
 
+  const mistake = {
+      tel: document.querySelector('.mistake-tel-message'),
+      mail: document.querySelector('.mistake-mail-message'),
+      name: document.querySelector('.mistake-name-message'),
+    }
+//====================/ formData /============
+ console.log(mistake.tel);
 //==================== open & close modal ======================
 const doModalClose = () => {
     refs.backdrop.classList.toggle('is-hiden');

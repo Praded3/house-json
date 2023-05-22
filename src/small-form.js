@@ -151,10 +151,3 @@ function onEscKeyPress(event) {
     }
     
 }
-
-
-
-
-
-
-

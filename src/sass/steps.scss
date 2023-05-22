@@ -331,3 +331,21 @@
     -moz-box-shadow:  0 0 15px red;
     -webkit-box-shadow:  0 0 15px red;
 }
+.step__item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.mistake-tel-message,
+.mistake-mail-message,
+.mistake-name-message{
+    display: none;
+}
+.mistake-tel-message.mistake, 
+.mistake-mail-message.mistake,
+.mistake-name-message.mistake{
+     display: flex;
+     color: red;
+}
