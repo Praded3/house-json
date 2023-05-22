@@ -338,6 +338,9 @@
 
 }
 
+
+
+
 .mistake-tel-message,
 .mistake-mail-message,
 .mistake-name-message{
@@ -348,4 +351,20 @@
 .mistake-name-message.mistake{
      display: flex;
      color: red;
+     text-align: center;
+}
+
+.small-mistake-name-message,
+.small-mistake-tel-message,
+.small-mistake-mail-message,
+.small-mistake-address-message{
+    display: none;
+}
+.small-mistake-name-message._mistake, 
+.small-mistake-tel-message._mistake,
+.small-mistake-mail-message._mistake,
+.small-mistake-address-message._mistake{
+     display: flex;
+     color: red;
+     text-align: center;
 }

@@ -69,6 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function formValidate(modalFormS) {
+         const mistake = {
+    tel: document.querySelector('.small-mistake-tel-message'),
+    mail: document.querySelector('.small-mistake-mail-message'),
+    name: document.querySelector('.small-mistake-name-message'),
+    address: document.querySelector('.small-mistake-address-message'),
+    }
+
         let error = 0;
         let formReq = document.querySelectorAll('._req');
          console.log(formReq);
@@ -77,18 +84,56 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let index = 0; index < formReq.length; index++) {
             const input = formReq[index];
             formRemoveError(input);
-
-            if (input.classList.contains('_email')) {
+             if (input.classList.contains('_req-name')) {
+                if (nameTest(input)) {
+                    formAddError(input);
+                    error++;
+                    mistake.name.classList.add('_mistake');
+                    
+                } else  {
+                    mistake.name.classList.remove('_mistake');
+                }
+            } 
+             if (input.classList.contains('_req-tel')) {
+                if (telTest(input)) {
+                    formAddError(input);
+                    error++;
+                    mistake.tel.classList.add('_mistake');
+                    
+                } else  {
+                    mistake.tel.classList.remove('_mistake');
+                }
+            }
+            if (input.classList.contains('_req-email')) {
                 if (emailTest(input)) {
                     formAddError(input);
                     error++;
+                    mistake.mail.classList.add('_mistake');
+                } else  {
+                    mistake.mail.classList.remove('_mistake');
                 }
-            } else {
+            }
+            else {
 				if (input.value === '') {
 					formAddError(input);
-					error++;
-				}
+                    error++;
+                    mistake.address.classList.add('_mistake');
+                }
+                 else  {
+                    mistake.address.classList.remove('_mistake');
+                }
 			}
+            
+            //  if (input.classList.contains('_req-address')) {
+            //     if (addressTest(input)) {
+            //         formAddError(input);
+            //         error++;
+            //         mistake.address.classList.add('_mistake');
+                    
+            //     } else  {
+            //         mistake.address.classList.remove('_mistake');
+            //     }
+            // } 
         }
         return error;
     }
@@ -96,18 +141,34 @@ document.addEventListener('DOMContentLoaded', function () {
     function formAddError(input) {
         input.classList.add('_error');
         input.classList.add('_error');
+       
     }
     function formRemoveError(input) {
         input.classList.remove('_error');
         input.classList.remove('_error');
+        // mistake.tel.classList.remove('mistake');
     }
-
+    function nameTest(input) {
+        return !/^([A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+)$/.test(input.value);
+    }
 
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-});
- 
+    function telTest(input) {
+        return !/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(input.value);
+    }
+
+    // function addressTest(input) {
+    //     return !/^^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$/.test(input.value);
+    // }
+
+
+
+}
+
+  
+);
 
 
 

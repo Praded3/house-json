@@ -268,12 +268,6 @@ async function modalFormSubmit(event) {
                     mistake.name.classList.remove('mistake');
                 }
             } 
-            // else {
-			// 	if (input.value === '') {
-			// 		formAddError(input);
-			// 		error++;
-			// 	}
-			// }
         }
         return error;
     }
@@ -289,8 +283,9 @@ async function modalFormSubmit(event) {
         // mistake.tel.classList.remove('mistake');
     }
     function nameTest(input) {
-        return !/^([A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+)$/.test(input.value);
+        return !/^([A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+)$/.test(input.value);
     }
+        // return !/^([A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+[\s]{0,1}[A-zа-яё-]+)$/.test(input.value);
 
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);

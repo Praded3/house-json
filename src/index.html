@@ -300,30 +300,34 @@
                     <form class="steps__form" autocomplete="on">
                         <span class="form__input-wrapper"><svg class='input__icon'>
                                 <use href='./img/sprite.svg#icon-name'></use>
-                            </svg><input class="steps__input _req _name" name="Name" type="text"
+                            </svg><input class="steps__input _req _req-name" name="Name" type="text"
                                 placeholder="Full Name"></span>
+                        <p class='small-mistake-name-message'>The Full Name may contain letters (A-z) and a symboll
+                            "-"</p>
+
                         <span class="form__input-wrapper"><svg class='input__icon'>
                                 <use href='./img/sprite.svg#icon-phone'></use>
                             </svg>
-
-
-                            <input class="steps__input _req" name="Phone" type="tel" placeholder="Phone Number"
-                                type="tel" required pattern="\+?[0-9\s\-\(\)]+"></span>
-
-
+                            <input class="steps__input _req _req-tel" name="Phone" type="tel"
+                                placeholder="Phone Number"></span>
+                        <p class='small-mistake-tel-message'>The phone number must be at least 9 digits long (0-9)</p>
 
                         <span class="form__input-wrapper"><svg class='input__icon'>
                                 <use href='./img/sprite.svg#icon-mail'></use>
                             </svg>
-                            <input class="steps__input _req _email" name="E-Mail" type="email"
+                            <input class="steps__input _req _req-email" name="E-Mail" type="email"
                                 placeholder="E-Mail Address"></span>
+                        <p class='small-mistake-mail-message'>The e-mail may contain letters (A-z) and must include
+                            the symbols "@"
+                            and "."</p>
 
                         <span class="form__input-wrapper"><svg class='input__icon'>
                                 <use href='./img/sprite.svg#icon-adress'></use>
                             </svg>
-
-                            <input class="steps__input _req" name="Address" type="text"
+                            <input class="steps__input _req _req-address" name="Address" type="text"
                                 placeholder="Property Address"></span>
+                        <p class='small-mistake-address-message'>Enter your property address</p>
+
                         <button type='submit' class='steps__btn _anim-items'>GET MY FAIR CASH OFFER</button>
                     </form>
                 </div>
