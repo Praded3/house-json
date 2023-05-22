@@ -302,11 +302,12 @@ refs.modalCloseBtn.addEventListener('click', (doModalClose));
 
 const visabilityBackdrop = () => {
     bigForm.addEventListener('submit', modalFormSubmit);
+    autocomplete.addListener('place_changed', onPlaceChange);
 
     refs.backdrop.classList.toggle('is-hiden');
     refs.body.classList.toggle('lock');
     window.addEventListener('keydown', onEscKeyPress);
-bigForm.addEventListener('keydown', (ban));
+    bigForm.addEventListener('keydown', (ban));
     openBtns.heroBtn.removeEventListener('click', (visabilityBackdrop) );
     openBtns.advantagesBtn.removeEventListener('click', (visabilityBackdrop) );
     openBtns.nationwideBtn.removeEventListener('click', (visabilityBackdrop) );

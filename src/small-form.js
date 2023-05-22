@@ -8,19 +8,22 @@ const refs = {
     clientName: document.querySelector('.modal__thanks-name'),
     
 }
- 
+  const TOKEN = '6279094717:AAEINNI-WB8PTYW-nQglKgNdX6lALH6T6A0';
+        const CHAT_ID = '-1001887598395';
+        const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
 
 document.addEventListener('DOMContentLoaded', function () {
-    const modalForm = document.querySelector('.steps__form');
+    const modalFormS = document.querySelector('.steps__form');
 
 
-    modalForm.addEventListener('submit', formSend);
+    modalFormS.addEventListener('submit', formSend);
 
     async function formSend(e) {
         e.preventDefault();
 
-        let error = formValidate(modalForm);
-        let formData = new FormData(modalForm);
+        let error = formValidate(modalFormS);
+        let formData = new FormData(modalFormS);
 
         if (formData) {
         }
@@ -65,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
-    function formValidate(modalForm) {
+    function formValidate(modalFormS) {
         let error = 0;
         let formReq = document.querySelectorAll('._req');
          console.log(formReq);

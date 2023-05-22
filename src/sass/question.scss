@@ -46,14 +46,14 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url(./img/question/1.png);
+    background-image: url(../img/question/1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-         background-image: url(./img/question/1@2x.png);
+         background-image: url(../img/question/1@2x.png);
     }
     }
    
